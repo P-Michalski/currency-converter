@@ -22,32 +22,34 @@
 </head>
 
 <body class="body">
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Kalkulator PLN na inną walutę</legend>
-            <ul class="form__list">
-                <li class="form__listItem">
-                    <label>Wpisz ilość PLN</label>
-                    <input type="number" required value="0" min="0" step="0.01" class="form__inputBox js-formPLN">
-                </li>
-                <li class="form__listItem">
-                    <label>Wybierz walutę</label>
-                    <select name="currency" class="form__inputBox js-formSelectedCurrency">
-                        <option value="EUR">Euro</option>
-                        <option value="JPY">Jen japoński</option>
-                        <option value="USD">Dolar amerykański</option>
-                        <option value="GBP">Brytyjski funt szterling</option>
-                    </select>
-                </li>
-                <li class="form__listItem">
-                    <button type="submit" class="form__button">Oblicz</button>
-                </li>
-            </ul>
-            <p>
-                <span class="js-formResult"></span>
-            </p>
-        </fieldset>
-    </form>
+    <div class="form__container">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator PLN na inną walutę</legend>
+                <ul class="form__list">
+                    <li class="form__listItem">
+                        <label>Wpisz ilość PLN</label>
+                        <input type="number" required value="0" min="0" step="0.01" class="form__inputBox js-formPLN">
+                    </li>
+                    <li class="form__listItem">
+                        <label>Wybierz walutę</label>
+                        <select name="currency" class="form__inputBox js-formSelectedCurrency">
+                            <option value="EUR">Euro</option>
+                            <option value="JPY">Jen japoński</option>
+                            <option value="USD">Dolar amerykański</option>
+                            <option value="GBP">Brytyjski funt szterling</option>
+                        </select>
+                    </li>
+                    <li class="form__listItem">
+                        <button type="submit" class="form__button">Oblicz</button>
+                    </li>
+                </ul>
+                <p>
+                    <span class="js-formResult"></span>
+                </p>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>

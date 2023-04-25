@@ -1,3 +1,8 @@
+.form__container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
 .form {
     padding: 20px 20px;
 }
@@ -14,6 +19,7 @@
 .form__fieldset {
     border: 2px solid rgb(37, 37, 37);
     border-radius: 20px;
+    background-color: white;
 }
 
 .form__list {
