@@ -7,20 +7,20 @@
 
         switch (currency) {
             case "USD":
-                return (amount * usd).toFixed(2);
+                return amount * usd;
             case "EUR":
-                return (amount * eur).toFixed(2);
+                return amount * eur;
             case "JPY":
-                return (amount * jpy).toFixed(2);
+                return amount * jpy;
             case "GBP":
-                return (amount * gbp).toFixed(2);
+                return amount * gbp;
         }
 
     };
 
     const updateResultText = (amount, result, currency) => {
         const resultText = document.querySelector(".js-formResult");
-        resultText.innerText = `${parseFloat(amount)} PLN to ${result} ${currency}`
+        resultText.innerText = `${parseFloat(amount)} PLN to ${result.toFixed(2)} ${currency}`;
     };
 
     const onFormSubmit = (event) => {
@@ -37,7 +37,7 @@
 
     const init = () => {
         const form = document.querySelector(".js-form");
-        form.addEventListener("submit", onFormSubmit)
+        form.addEventListener("submit", onFormSubmit);
     };
     init();
 }
