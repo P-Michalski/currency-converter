@@ -20,7 +20,7 @@
 
     const updateResultText = (amount, result, currency) => {
         const resultText = document.querySelector(".js-formResult");
-        resultText.innerText = `${parseFloat(amount)} PLN to ${result.toFixed(2)} ${currency}`;
+        resultText.innerText = `${parseFloat(amount)} PLN = ${result.toFixed(2)} ${currency}`;
     };
 
     const onFormSubmit = (event) => {
